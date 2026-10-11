@@ -2,21 +2,10 @@
 <html lang="ro" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Galahad Performance | Chiptuning ECU Stage 1, ECO Tuning & Coding Auto România</title>
-  <meta name="description" content="Atelier dedicat calibrare software ECU Stage 1, ECO Tuning consum redus, optimizări cutii TCU și coding funcții ascunse BMW, Audi, VAG, Mercedes, Porsche. Contact: +40 767 102 251.">
-  <meta name="theme-color" content="#07080A">
-
-  <!-- OpenGraph & Social Cards -->
-  <meta property="og:title" content="Galahad Performance | Chiptuning ECU & Diagnoză România">
-  <meta property="og:description" content="Putere calibrată, zero compromis. Stage 1, ECO Tuning și activare funcții ascunse.">
-  <meta property="og:image" content="https://galahad-performance.vercel.app/assets/hero-cars.jpg">
-  <meta property="og:url" content="https://galahad-performance.vercel.app">
-  <meta property="og:type" content="website">
-
-  <!-- Favicon SVG Oficial (Emblemă Scut Proporție Pătrată 1:1) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galahad Performance | Chiptuning ECU Stage 1 & Diagnoză Auto România</title>
+  <meta name="description" content="Optimizare software ECU Stage 1, recalibrări cutii de viteze TCU și diagnoză computerizată avansată. Putere crescută în limitele de siguranță ale motorului.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="alternate icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="apple-touch-icon" href="favicon.svg">
   
   <!-- Tailwind CSS CDN -->
@@ -25,17 +14,14 @@
     tailwind.config = {
       theme: {
         extend: {
-          screens: {
-            'xs': '400px'
-          },
           colors: {
             brand: {
               toxic: '#A3E635',       /* Verde acid de performanță */
               toxicDark: '#84CC16',
-              dark: '#07080A',
-              surface: '#0D1016',
-              card: '#131720',
-              border: '#1E2430'
+              dark: '#08090C',
+              surface: '#0E1116',
+              card: '#141820',
+              border: '#202632'
             }
           },
           fontFamily: {
@@ -56,27 +42,7 @@
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Schema.org Structured Data pentru Google Search SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "AutoRepair",
-    "name": "Galahad Performance",
-    "description": "Atelier dedicat calibrare software ECU, Stage 1, ECO Tuning și diagnoză auto computerizată în România.",
-    "telephone": "+40767102251",
-    "priceRange": "$$",
-    "currenciesAccepted": "RON, EUR",
-    "openingHours": "Mo-Sa 09:00-19:00",
-    "url": "https://galahad-performance.vercel.app",
-    "logo": "https://galahad-performance.vercel.app/assets/logo.svg",
-    "image": "https://galahad-performance.vercel.app/assets/hero-cars.jpg"
-  }
-  </script>
-
   <style>
-    body {
-      overflow-x: hidden;
-    }
     .titanium-gradient {
       background: linear-gradient(180deg, #FFFFFF 0%, #E2E8F0 30%, #8E96A4 65%, #CBD5E1 100%);
       -webkit-background-clip: text;
@@ -88,47 +54,42 @@
     .toxic-text-glow {
       text-shadow: 0 0 12px rgba(163, 230, 53, 0.6);
     }
-    .laser-green-band {
-      background: linear-gradient(90deg, transparent 0%, rgba(163, 230, 53, 0.2) 15%, #A3E635 50%, rgba(163, 230, 53, 0.2) 85%, transparent 100%);
-      box-shadow: 0 0 12px rgba(163, 230, 53, 0.8);
+    .carbon-pattern {
+      background-color: #08090c;
+      background-image: 
+        linear-gradient(45deg, #101318 25%, transparent 25%), 
+        linear-gradient(-45deg, #101318 25%, transparent 25%), 
+        linear-gradient(45deg, transparent 75%, #101318 75%), 
+        linear-gradient(-45deg, transparent 75%, #101318 75%);
+      background-size: 8px 8px;
     }
   </style>
 </head>
 <body class="bg-brand-dark text-slate-100 font-body antialiased selection:bg-brand-toxic selection:text-black">
 
   <!-- ==================== HEADER / NAVBAR ==================== -->
-  <header class="sticky top-0 z-50 bg-brand-dark/95 backdrop-blur-md border-b border-brand-border">
-    <div class="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+  <header class="sticky top-0 z-50 bg-brand-dark/90 backdrop-blur-md border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
-      <!-- LOGOUL OFICIAL: EMBLEMĂ SCUT + WORDMARK TITAN -->
-      <a href="#" class="flex items-center gap-2.5 sm:gap-3.5 select-none group">
-        <!-- Emblema Scut SVG -->
-        <div class="w-9 h-9 sm:w-11 sm:h-11 shrink-0">
-          <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-md" fill="none">
-            <path d="M 50 6 L 86 20 L 78 72 L 50 96 L 22 72 L 14 20 Z" fill="#0D1016" stroke="#94A3B8" stroke-width="3"/>
-            <path d="M 50 14 L 76 26 L 70 66 L 50 86 L 30 66 L 24 26 Z" fill="#131720"/>
-            <path d="M 64 30 L 42 30 L 32 45 L 32 60 L 42 72 L 67 72 L 67 52 L 49 52 L 49 58 L 57 58 L 57 64 L 44 64 L 39 58 L 39 48 L 44 38 L 59 38 L 66 30 Z" fill="#E2E8F0"/>
-            <polygon points="56,30 67,30 67,42" fill="#A3E635"/>
-            <path d="M 32 63 L 50 81 L 68 63" stroke="#A3E635" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-          </svg>
+      <!-- LOGOUL APROBAT GALAHAD PERFORMANCE -->
+      <a href="#" class="flex flex-col select-none group">
+        <div class="flex items-center gap-2">
+          <span class="font-brand font-bold text-lg sm:text-xl tracking-[0.2em] titanium-gradient">
+            GALAHAD
+          </span>
+          <span class="w-1.5 h-1.5 rounded-full bg-brand-toxic animate-pulse"></span>
         </div>
-
-        <div class="flex flex-col">
-          <div class="flex items-center gap-1.5">
-            <span class="font-brand font-bold text-base sm:text-2xl tracking-[0.2em] titanium-gradient">
-              GALAHAD
-            </span>
-          </div>
-          <div class="w-full h-[2px] laser-green-band my-0.5"></div>
-          <span class="font-body font-black text-[7.5px] sm:text-[10px] tracking-[0.52em] text-brand-toxic uppercase">
+        <div class="flex items-center gap-2 mt-0.5">
+          <div class="h-[2px] w-4 bg-brand-toxic rounded-full group-hover:w-full transition-all duration-300"></div>
+          <span class="font-body font-black text-[9px] tracking-[0.45em] text-brand-toxic uppercase">
             PERFORMANCE
           </span>
         </div>
       </a>
 
       <!-- Desktop Nav Links -->
-      <nav class="hidden lg:flex items-center gap-7 text-xs xl:text-sm font-semibold text-slate-300">
-        <a href="#servicii" class="hover:text-brand-toxic transition">Servicii & Coding</a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300">
+        <a href="#servicii" class="hover:text-brand-toxic transition">Servicii</a>
         <a href="#calculator" class="hover:text-brand-toxic transition flex items-center gap-1.5">
           <span class="w-1.5 h-1.5 rounded-full bg-brand-toxic"></span>
           Calculator Stage 1
@@ -138,254 +99,191 @@
         <a href="#faq" class="hover:text-brand-toxic transition">Întrebări</a>
       </nav>
 
-      <!-- Contact Phone & WhatsApp -->
-      <div class="flex items-center gap-2 sm:gap-3">
-        <!-- Direct Call (Desktop) -->
-        <a href="tel:+40767102251" class="hidden sm:flex items-center gap-2 text-xs font-bold text-slate-300 hover:text-white transition">
-          <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-toxic"></i>
-          <span>0767 102 251</span>
-        </a>
-
-        <!-- WhatsApp Button -->
-        <a href="https://wa.me/40767102251?text=Salut%2C%20Galahad%20Performance!%20Vreau%20o%20ofert%C4%83%20de%20pre%C8%9B%20pentru%20ma%C8%99ina%20mea." 
+      <!-- CTA WhatsApp Button -->
+      <div class="flex items-center gap-4">
+        <a href="https://wa.me/40767102251?text=Salut%2C%20Galahad%20Performance!%20Vreau%20o%20ofert%C4%83%20pentru%20ma%C8%99ina%20mea." 
            target="_blank" 
            rel="noopener"
-           class="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl bg-brand-toxic text-black font-extrabold text-[11px] sm:text-xs uppercase tracking-wider hover:bg-brand-toxicDark transition duration-200 toxic-glow">
+           class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-brand-toxic/10 text-brand-toxic border border-brand-toxic/30 font-bold text-xs uppercase tracking-wider hover:bg-brand-toxic hover:text-black transition duration-200">
           <i data-lucide="message-circle" class="w-4 h-4"></i>
-          <span class="hidden sm:inline">WhatsApp Rapid</span>
-          <span class="sm:hidden font-black">WhatsApp</span>
-        </a>
-
-        <!-- Mobile Menu Toggle Button -->
-        <button id="mobileMenuBtn" aria-label="Deschide meniul mobil" class="lg:hidden p-1.5 text-slate-300 hover:text-white">
-          <i data-lucide="menu" class="w-6 h-6"></i>
-        </button>
-      </div>
-
-    </div>
-
-    <!-- Mobile Dropdown Drawer -->
-    <div id="mobileMenu" class="hidden lg:hidden bg-brand-surface border-b border-brand-border px-5 py-6 space-y-4 shadow-2xl">
-      <a href="#servicii" class="block text-sm font-semibold text-slate-300 hover:text-brand-toxic transition py-2" onclick="toggleMobileMenu()">Servicii & Coding</a>
-      <a href="#calculator" class="block text-sm font-semibold text-slate-300 hover:text-brand-toxic transition py-2 flex items-center gap-2" onclick="toggleMobileMenu()">
-        <span class="w-2 h-2 rounded-full bg-brand-toxic"></span>
-        Calculator Putere Stage 1
-      </a>
-      <a href="#proces" class="block text-sm font-semibold text-slate-300 hover:text-brand-toxic transition py-2" onclick="toggleMobileMenu()">Cum Lucrăm (Proces)</a>
-      <a href="#portofoliu" class="block text-sm font-semibold text-slate-300 hover:text-brand-toxic transition py-2" onclick="toggleMobileMenu()">Exemple de Modele</a>
-      <a href="#faq" class="block text-sm font-semibold text-slate-300 hover:text-brand-toxic transition py-2" onclick="toggleMobileMenu()">Întrebări Frecvente</a>
-      <div class="pt-4 border-t border-brand-border flex items-center justify-between">
-        <span class="text-xs text-slate-400">Telefon direct:</span>
-        <a href="tel:+40767102251" class="text-xs font-bold text-brand-toxic flex items-center gap-1.5">
-          <i data-lucide="phone" class="w-3.5 h-3.5"></i>
-          0767 102 251
+          <span>Ofertă WhatsApp</span>
         </a>
       </div>
+
     </div>
   </header>
 
   <!-- ==================== HERO SECTION ==================== -->
-  <section class="relative overflow-hidden pt-8 pb-14 sm:pt-16 sm:pb-24 border-b border-brand-border">
+  <section class="relative overflow-hidden pt-16 pb-24 md:pt-24 md:pb-32 border-b border-brand-border">
     <!-- Glow Background -->
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] sm:w-[900px] h-[300px] sm:h-[450px] bg-brand-toxic/5 blur-[120px] rounded-full pointer-events-none"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-brand-toxic/5 blur-[120px] rounded-full pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
       
       <!-- Badge -->
-      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-surface border border-brand-border text-[11px] sm:text-xs font-semibold text-slate-300 mb-5 sm:mb-8">
-        <span class="w-2 h-2 rounded-full bg-brand-toxic animate-ping"></span>
-        <span class="text-brand-toxic font-bold">CHIPTUNING · ECO TUNING · CODING AUTO</span>
-        <span class="text-slate-600 hidden sm:inline">|</span>
-        <span class="text-slate-400 hidden sm:inline">ROMÂNIA</span>
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-surface border border-brand-border text-xs font-semibold text-slate-300 mb-8">
+        <span class="w-2 h-2 rounded-full bg-brand-toxic"></span>
+        <span class="text-brand-toxic font-bold">CHIPTUNING & CALIBRARE ECU</span>
+        <span class="text-slate-600">|</span>
+        <span>STAGE 1 · DIAGNOZĂ · RECALIBRĂRI</span>
       </div>
 
       <!-- Main Title -->
-      <h1 class="text-3xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-white max-w-5xl mx-auto leading-[1.15] mb-4 sm:mb-6">
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white max-w-5xl mx-auto leading-[1.1] mb-6">
         Mai mult din mașina ta.<br>
-        <span class="titanium-gradient">Putere calibrată,</span> 
-        <span class="text-brand-toxic toxic-text-glow">zero compromis.</span>
+        <span class="titanium-gradient">Putere controlată,</span> 
+        <span class="text-brand-toxic toxic-text-glow">zero riscuri.</span>
       </h1>
 
-      <p class="max-w-2xl sm:max-w-3xl mx-auto text-xs sm:text-base md:text-lg text-slate-400 font-normal leading-relaxed mb-7 sm:mb-10 px-2">
-        Resoftare ECU Stage 1 individuală, optimizare consum ECO Tuning, calibrare cutii automate TCU și activare funcții ascunse (Coding). Fără fișiere generice — fiecare mașină este testată și configurată în siguranță.
+      <p class="max-w-2xl mx-auto text-base sm:text-lg text-slate-400 font-normal leading-relaxed mb-10">
+        Resoftare ECU Stage 1 dezvoltată individual pe starea motorului tău. Creștere reală de putere, cuplu masiv și răspuns instant la pedală — păstrând componentele în limite sigure.
       </p>
 
       <!-- Action Buttons -->
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 max-w-md mx-auto mb-10 sm:mb-16">
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
         <a href="#calculator" 
-           class="w-full sm:w-auto px-7 py-3.5 sm:py-4 rounded-xl bg-brand-toxic text-black font-extrabold text-xs sm:text-sm uppercase tracking-wider hover:bg-brand-toxicDark transition duration-200 toxic-glow flex items-center justify-center gap-2">
+           class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-toxic text-black font-extrabold text-sm uppercase tracking-wider hover:bg-brand-toxicDark transition duration-200 toxic-glow flex items-center justify-center gap-2">
           <i data-lucide="gauge" class="w-4 h-4"></i>
           <span>Calculează Puterea</span>
         </a>
-        <a href="https://wa.me/40767102251?text=Salut!%20Vreau%20o%20ofert%C4%83%20de%20pre%C8%9B%20pentru%20ma%C8%99ina%20mea." 
+        <a href="https://wa.me/40767102251?text=Salut!%20Vreau%20o%20ofert%C4%83%20pentru%20un%20Stage%201." 
            target="_blank"
            rel="noopener"
-           class="w-full sm:w-auto px-7 py-3.5 sm:py-4 rounded-xl bg-brand-card hover:bg-brand-surface text-slate-200 border border-brand-border font-bold text-xs sm:text-sm uppercase tracking-wider transition duration-200 flex items-center justify-center gap-2">
-          <i data-lucide="message-square" class="w-4 h-4 text-brand-toxic"></i>
-          <span>Cere Preț pe WhatsApp</span>
+           class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-card hover:bg-brand-surface text-slate-200 border border-brand-border font-bold text-sm uppercase tracking-wider transition duration-200 flex items-center justify-center gap-2">
+          <i data-lucide="phone-call" class="w-4 h-4 text-brand-toxic"></i>
+          <span>Consultanță Gratuită</span>
         </a>
       </div>
 
-      <!-- SHOWCASE HERO PHOTO: BMW M4 & AUDI RS ÎN ATELIER DARK -->
-      <div class="relative max-w-5xl mx-auto rounded-2xl sm:rounded-3xl overflow-hidden border border-brand-border shadow-[0_20px_60px_rgba(0,0,0,0.9)] group">
-        <img src="assets/hero-cars.jpg" 
-             alt="BMW M4 Competition & Audi RS în atelierul Galahad Performance" 
-             loading="eager"
-             class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
-        
-        <!-- Gradient Overlay & Detalii -->
-        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/25 to-transparent"></div>
-        
-        <div class="absolute bottom-3 sm:bottom-8 left-3 sm:left-8 right-3 sm:right-8 flex flex-col sm:flex-row items-start sm:items-end justify-between gap-2.5 sm:gap-4">
-          <div class="text-left">
-            <span class="text-[9px] sm:text-[11px] font-bold uppercase tracking-widest text-brand-toxic px-2 py-0.5 sm:px-2.5 sm:py-1 rounded bg-black/75 border border-brand-toxic/30 backdrop-blur-md">
-              Specializare Motorsport & Stradal
-            </span>
-            <h3 class="text-sm sm:text-2xl font-black text-white mt-1 sm:mt-2">
-              BMW M & Audi S/RS / VAG / Mercedes
-            </h3>
-            <p class="text-[10px] sm:text-xs text-slate-300 hidden sm:block">Calibrări software dezvoltate pe baza hărților originale de fabrică.</p>
-          </div>
-
-          <div class="flex items-center gap-2 bg-black/75 px-2.5 py-1.5 sm:px-4 sm:py-2 rounded-xl border border-white/10 backdrop-blur-md text-[10px] sm:text-xs text-slate-300">
-            <i data-lucide="shield-check" class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-brand-toxic"></i>
-            <span>Garanție Soft & Backup Inclus</span>
-          </div>
-        </div>
-      </div>
-
       <!-- Metrics Counter Strip -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-4 max-w-4xl mx-auto mt-8 sm:mt-16 pt-6 sm:pt-12 border-t border-brand-border/60">
-        <div class="bg-brand-surface/60 border border-brand-border/80 p-3.5 sm:p-5 rounded-xl sm:rounded-2xl">
-          <div class="font-display text-xl sm:text-3xl font-black text-brand-toxic mb-0.5">+25-35%</div>
-          <div class="text-[9px] sm:text-xs text-slate-400 uppercase font-semibold tracking-wider">Putere Stage 1</div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mt-16 pt-12 border-t border-brand-border/60">
+        <div class="bg-brand-surface/60 border border-brand-border/80 p-5 rounded-2xl">
+          <div class="font-display text-3xl font-black text-brand-toxic mb-1">+25-35%</div>
+          <div class="text-xs text-slate-400 uppercase font-semibold tracking-wider">Cai Putere (CP)</div>
         </div>
-        <div class="bg-brand-surface/60 border border-brand-border/80 p-3.5 sm:p-5 rounded-xl sm:rounded-2xl">
-          <div class="font-display text-xl sm:text-3xl font-black text-white mb-0.5">-1.5 L/100km</div>
-          <div class="text-[9px] sm:text-xs text-slate-400 uppercase font-semibold tracking-wider">ECO Consum</div>
+        <div class="bg-brand-surface/60 border border-brand-border/80 p-5 rounded-2xl">
+          <div class="font-display text-3xl font-black text-white mb-1">+60-100 Nm</div>
+          <div class="text-xs text-slate-400 uppercase font-semibold tracking-wider">Cuplu Suplimentar</div>
         </div>
-        <div class="bg-brand-surface/60 border border-brand-border/80 p-3.5 sm:p-5 rounded-xl sm:rounded-2xl">
-          <div class="font-display text-xl sm:text-3xl font-black text-brand-toxic mb-0.5">50+ Funcții</div>
-          <div class="text-[9px] sm:text-xs text-slate-400 uppercase font-semibold tracking-wider">Coding & Activări</div>
+        <div class="bg-brand-surface/60 border border-brand-border/80 p-5 rounded-2xl">
+          <div class="font-display text-3xl font-black text-brand-toxic mb-1">100% Sigur</div>
+          <div class="text-xs text-slate-400 uppercase font-semibold tracking-wider">Toleranțe Stock</div>
         </div>
-        <div class="bg-brand-surface/60 border border-brand-border/80 p-3.5 sm:p-5 rounded-xl sm:rounded-2xl">
-          <div class="font-display text-xl sm:text-3xl font-black text-white mb-0.5">100% Sigur</div>
-          <div class="text-[9px] sm:text-xs text-slate-400 uppercase font-semibold tracking-wider">Backup Original</div>
+        <div class="bg-brand-surface/60 border border-brand-border/80 p-5 rounded-2xl">
+          <div class="font-display text-3xl font-black text-white mb-1">Backup</div>
+          <div class="text-xs text-slate-400 uppercase font-semibold tracking-wider">Soft Original Salvat</div>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- ==================== CALCULATOR INTERACTIV STAGE 1 (TITLU OPTIMIZAT MOBIL) ==================== -->
-  <section id="calculator" class="py-14 sm:py-24 bg-brand-surface/50 border-b border-brand-border relative">
+  <!-- ==================== CALCULATOR INTERACTIV STAGE 1 ==================== -->
+  <section id="calculator" class="py-20 md:py-28 bg-brand-surface/50 border-b border-brand-border relative">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-toxic/10 text-brand-toxic text-xs font-bold uppercase tracking-widest mb-2.5">
-          Estimator Tehnic Putere
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-toxic/10 text-brand-toxic text-xs font-bold uppercase tracking-widest mb-3">
+          Estimator Tehnic
         </div>
-        
-        <!-- TITLU ÎNTR-UN SINGUR RÂND PE MOBIL (FLUID & FĂRĂ RUPERE DE RÂND) -->
-        <h2 class="text-[clamp(1.02rem,4.1vw,2.25rem)] font-extrabold text-white tracking-tight leading-tight whitespace-nowrap text-center">
-          Cât câștigă mașina ta cu <span class="text-brand-toxic">Stage&nbsp;1?</span>
+        <h2 class="text-xl xs:text-2xl sm:text-4xl font-extrabold text-white tracking-tight whitespace-nowrap">
+          Cât câștigă mașina ta cu <span class="text-brand-toxic">Stage&nbsp;1</span>?
         </h2>
-
-        <p class="text-slate-400 text-xs sm:text-sm mt-2">
-          Selectează marca și motorizarea. Prețul exact se transmite pe WhatsApp în funcție de seria de șasiu (VIN) și calculatorul motorului.
+        <p class="text-slate-400 text-sm mt-2">
+          Selectează marca și motorizarea pentru o estimare precisă a puterii și cuplului după calibrare.
         </p>
       </div>
 
       <!-- Simulator Box -->
-      <div class="bg-brand-card border border-brand-border rounded-2xl sm:rounded-3xl p-4 sm:p-10 shadow-2xl relative overflow-hidden">
+      <div class="bg-brand-card border border-brand-border rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
         
         <!-- Selectoare Mașină -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 sm:gap-6 mb-5 sm:mb-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           <div>
-            <label class="block text-xs uppercase font-bold tracking-wider text-slate-400 mb-1.5 sm:mb-2">1. Alege Marca</label>
-            <select id="carBrand" onchange="updateModels()" class="w-full bg-brand-surface border border-brand-border rounded-xl px-3.5 py-3 sm:px-4 sm:py-3.5 text-white text-xs sm:text-sm font-semibold focus:outline-none focus:border-brand-toxic transition cursor-pointer">
+            <label class="block text-xs uppercase font-bold tracking-wider text-slate-400 mb-2">1. Alege Marca</label>
+            <select id="carBrand" onchange="updateModels()" class="w-full bg-brand-surface border border-brand-border rounded-xl px-4 py-3.5 text-white text-sm font-semibold focus:outline-none focus:border-brand-toxic transition">
               <option value="bmw">BMW</option>
               <option value="audi">Audi</option>
               <option value="volkswagen">Volkswagen</option>
               <option value="mercedes">Mercedes-Benz</option>
               <option value="skoda">Skoda</option>
-              <option value="seat">Seat / Cupra</option>
-              <option value="porsche">Porsche</option>
-              <option value="ford">Ford</option>
             </select>
           </div>
 
           <div>
-            <label class="block text-xs uppercase font-bold tracking-wider text-slate-400 mb-1.5 sm:mb-2">2. Alege Motorizarea / Modelul</label>
-            <select id="carModel" onchange="calculateGains()" class="w-full bg-brand-surface border border-brand-border rounded-xl px-3.5 py-3 sm:px-4 sm:py-3.5 text-white text-xs sm:text-sm font-semibold focus:outline-none focus:border-brand-toxic transition cursor-pointer">
+            <label class="block text-xs uppercase font-bold tracking-wider text-slate-400 mb-2">2. Alege Motorizarea</label>
+            <select id="carModel" onchange="calculateGains()" class="w-full bg-brand-surface border border-brand-border rounded-xl px-4 py-3.5 text-white text-sm font-semibold focus:outline-none focus:border-brand-toxic transition">
               <!-- Populare dinamică din JS -->
             </select>
           </div>
         </div>
 
         <!-- Rezultate Dinamice Before / After -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 sm:gap-6 pt-5 sm:pt-6 border-t border-brand-border/70">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 border-t border-brand-border/70">
           
           <!-- Cai Putere (HP) -->
-          <div class="bg-brand-surface border border-brand-border rounded-xl sm:rounded-2xl p-4 sm:p-6">
-            <div class="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 sm:mb-4">
+          <div class="bg-brand-surface border border-brand-border rounded-2xl p-6">
+            <div class="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-slate-400 mb-4">
               <span>Cai Putere (CP)</span>
-              <span id="hpGainTag" class="text-brand-toxic bg-brand-toxic/10 px-2 py-0.5 rounded font-black text-xs">+45 CP</span>
+              <span id="hpGainTag" class="text-brand-toxic bg-brand-toxic/10 px-2 py-0.5 rounded font-black">+45 CP</span>
             </div>
             <div class="flex items-end justify-between">
               <div>
-                <span class="text-[9px] sm:text-xs text-slate-500 font-semibold block">FABRICĂ (STOCK)</span>
-                <span id="stockHp" class="font-display text-xl sm:text-3xl font-bold text-slate-300">190 CP</span>
+                <span class="text-xs text-slate-500 font-semibold block">STOCK</span>
+                <span id="stockHp" class="font-display text-3xl font-bold text-slate-300">190 CP</span>
               </div>
               <div class="text-right">
-                <span class="text-[9px] sm:text-xs text-brand-toxic font-bold block">STAGE 1 GALAHAD</span>
-                <span id="stage1Hp" class="font-display text-2xl sm:text-5xl font-black text-brand-toxic">235 CP</span>
+                <span class="text-xs text-brand-toxic font-bold block">STAGE 1</span>
+                <span id="stage1Hp" class="font-display text-4xl sm:text-5xl font-black text-brand-toxic">235 CP</span>
               </div>
             </div>
           </div>
 
           <!-- Cuplu (Nm) -->
-          <div class="bg-brand-surface border border-brand-border rounded-xl sm:rounded-2xl p-4 sm:p-6">
-            <div class="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 sm:mb-4">
+          <div class="bg-brand-surface border border-brand-border rounded-2xl p-6">
+            <div class="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-slate-400 mb-4">
               <span>Cuplu Motor (Nm)</span>
-              <span id="tqGainTag" class="text-brand-toxic bg-brand-toxic/10 px-2 py-0.5 rounded font-black text-xs">+80 Nm</span>
+              <span id="tqGainTag" class="text-brand-toxic bg-brand-toxic/10 px-2 py-0.5 rounded font-black">+80 Nm</span>
             </div>
             <div class="flex items-end justify-between">
               <div>
-                <span class="text-[9px] sm:text-xs text-slate-500 font-semibold block">FABRICĂ (STOCK)</span>
-                <span id="stockTq" class="font-display text-xl sm:text-3xl font-bold text-slate-300">400 Nm</span>
+                <span class="text-xs text-slate-500 font-semibold block">STOCK</span>
+                <span id="stockTq" class="font-display text-3xl font-bold text-slate-300">400 Nm</span>
               </div>
               <div class="text-right">
-                <span class="text-[9px] sm:text-xs text-brand-toxic font-bold block">STAGE 1 GALAHAD</span>
-                <span id="stage1Tq" class="font-display text-2xl sm:text-5xl font-black text-brand-toxic">480 Nm</span>
+                <span class="text-xs text-brand-toxic font-bold block">STAGE 1</span>
+                <span id="stage1Tq" class="font-display text-4xl sm:text-5xl font-black text-brand-toxic">480 Nm</span>
               </div>
             </div>
           </div>
 
         </div>
 
-        <!-- Politică de transparență / Preț la cerere -->
-        <div class="mt-4 sm:mt-5 p-3 sm:p-4 rounded-xl bg-brand-surface/60 border border-brand-border/60 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-2 sm:gap-4 text-center sm:text-left">
-          <div class="flex items-center gap-2">
-            <i data-lucide="info" class="w-4 h-4 text-brand-toxic shrink-0"></i>
-            <span>Prețul exact se comunică direct (în funcție de an, cod motor și generația de ECU).</span>
+        <!-- Beneficii suplimentare -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-6 text-xs text-slate-300">
+          <div class="flex items-center gap-2 bg-brand-surface/40 p-3 rounded-xl border border-brand-border/40">
+            <i data-lucide="check-circle" class="w-4 h-4 text-brand-toxic shrink-0"></i>
+            <span>Răspuns accelerație instant</span>
           </div>
-          <span class="text-brand-toxic font-bold uppercase tracking-wider text-[11px] sm:text-xs">Răspuns în max. 10 minute</span>
+          <div class="flex items-center gap-2 bg-brand-surface/40 p-3 rounded-xl border border-brand-border/40">
+            <i data-lucide="check-circle" class="w-4 h-4 text-brand-toxic shrink-0"></i>
+            <span>Până la -0.5L/100km consum la croazieră</span>
+          </div>
+          <div class="flex items-center gap-2 bg-brand-surface/40 p-3 rounded-xl border border-brand-border/40">
+            <i data-lucide="check-circle" class="w-4 h-4 text-brand-toxic shrink-0"></i>
+            <span>DPF & catalizator 100% active</span>
+          </div>
         </div>
 
         <!-- Buton cerere ofertă personalizată direct pentru mașina selectată -->
-        <div class="mt-5 sm:mt-8 text-center">
+        <div class="mt-8 text-center">
           <a id="calcWhatsappBtn" 
              href="#" 
              target="_blank"
-             rel="noopener"
-             class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl bg-brand-toxic text-black font-extrabold text-xs sm:text-sm uppercase tracking-wider hover:bg-brand-toxicDark transition duration-200 toxic-glow">
+             class="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-brand-toxic text-black font-extrabold text-sm uppercase tracking-wider hover:bg-brand-toxicDark transition duration-200 toxic-glow">
             <i data-lucide="message-circle" class="w-5 h-5"></i>
-            <span>Cere Ofertă de Preț pe WhatsApp</span>
+            <span>Cere Ofertă WhatsApp Pentru Această Configurație</span>
           </a>
-          <p class="text-[11px] text-slate-500 mt-2.5">
-            Nu găsești mașina ta în listă? <a href="https://wa.me/40767102251?text=Salut!%20Ma%C8%99ina%20mea%20nu%20e%20%C3%AEn%20list%C4%83%2C%20se%20poate%20face%20Stage%201%3F" class="text-brand-toxic hover:underline">Scrie-ne pe WhatsApp și verificăm compatibilitatea</a>.
-          </p>
         </div>
 
       </div>
@@ -393,273 +291,145 @@
     </div>
   </section>
 
-  <!-- ==================== TOATE SERVICIILE ==================== -->
-  <section id="servicii" class="py-16 sm:py-24 border-b border-brand-border">
+  <!-- ==================== SERVICII DETALIATE ==================== -->
+  <section id="servicii" class="py-20 md:py-28 border-b border-brand-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-        <div class="text-xs font-bold uppercase tracking-widest text-brand-toxic mb-2">Servicii Specializate</div>
-        <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
-          Calibrare Software, Eficiență & Coding
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Servicii Profesionale de Calibrare
         </h2>
-        <p class="text-slate-400 text-xs sm:text-sm mt-3">
-          De la creșteri de putere controlate la economie de combustibil și activare de funcții ascunse din fabrică.
+        <p class="text-slate-400 text-sm mt-3">
+          Fără soluții generice descărcate de pe forumuri. Fiecare fișier este adaptat stării tehnice a mașinii tale.
         </p>
       </div>
 
-      <!-- Grid Servicii -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
-        <!-- SERVICIU 1: STAGE 1 -->
-        <div class="bg-brand-surface border border-brand-border rounded-3xl p-6 sm:p-8 hover:border-brand-toxic/50 transition duration-300 flex flex-col justify-between group">
-          <div>
-            <div class="w-12 h-12 rounded-2xl bg-brand-toxic/10 border border-brand-toxic/20 flex items-center justify-center text-brand-toxic mb-5 group-hover:scale-110 transition">
-              <i data-lucide="zap" class="w-6 h-6"></i>
-            </div>
-            <h3 class="text-lg sm:text-xl font-bold text-white mb-1.5">Stage 1 ECU Remap</h3>
-            <span class="text-xs text-brand-toxic font-semibold block mb-4">Performanță & Răspuns Pedală</span>
-            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-5">
-              Optimizarea parametrilor de boost, timpi de injecție și hărți de cuplu. Până la 35% putere suplimentară fără modificări mecanice.
-            </p>
-            <ul class="space-y-2 text-xs text-slate-300 font-medium mb-6">
-              <li class="flex items-center gap-2">
-                <i data-lucide="check" class="w-3.5 h-3.5 text-brand-toxic shrink-0"></i>
-                Accelerație liniară și depășiri rapide
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check" class="w-3.5 h-3.5 text-brand-toxic shrink-0"></i>
-                Filtre de particule (DPF/OPF) 100% active
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check" class="w-3.5 h-3.5 text-brand-toxic shrink-0"></i>
-                Backup original & revenire la stock gratuită
-              </li>
-            </ul>
+        <!-- Serviciu 1 -->
+        <div class="bg-brand-surface border border-brand-border rounded-3xl p-8 hover:border-brand-toxic/50 transition duration-300 group">
+          <div class="w-12 h-12 rounded-2xl bg-brand-toxic/10 border border-brand-toxic/20 flex items-center justify-center text-brand-toxic mb-6 group-hover:scale-110 transition">
+            <i data-lucide="zap" class="w-6 h-6"></i>
           </div>
-          <a href="https://wa.me/40767102251?text=Salut!%20Vreau%20o%20ofert%C4%83%20de%20pre%C8%9B%20pentru%20Stage%201." 
-             target="_blank"
-             rel="noopener"
-             class="pt-4 border-t border-brand-border/60 flex items-center justify-between text-xs font-bold text-brand-toxic hover:underline">
-            <span>Cere Ofertă Stage 1</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </a>
+          <h3 class="text-xl font-bold text-white mb-3">Stage 1 ECU Remap</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Creștere optimă de putere și cuplu exclusiv din calibrare software (presiune boost, timpi de injecție, avans), fără a necesita piese mecanice aftermarket.
+          </p>
+          <ul class="space-y-2 text-xs text-slate-300 font-medium">
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-toxic"></span>
+              Păstrează fiabilitatea motorului
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-toxic"></span>
+              Consum redus în regim de croazieră
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-toxic"></span>
+              Garanție software pe viață
+            </li>
+          </ul>
         </div>
 
-        <!-- SERVICIU 2: ECO TUNING -->
-        <div class="bg-brand-surface border border-brand-border rounded-3xl p-6 sm:p-8 hover:border-brand-toxic/50 transition duration-300 flex flex-col justify-between group">
-          <div>
-            <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-5 group-hover:scale-110 transition">
-              <i data-lucide="leaf" class="w-6 h-6"></i>
-            </div>
-            <h3 class="text-lg sm:text-xl font-bold text-white mb-1.5">ECO Tuning (Economie Consum)</h3>
-            <span class="text-xs text-emerald-400 font-semibold block mb-4">Navetă, Autostradă & Flote</span>
-            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-5">
-              Calibrare dedicată cuplului la turații joase (1.500 - 2.200 RPM). Motorul trage fără efort, permițând schimbarea treptelor mai devreme.
-            </p>
-            <ul class="space-y-2 text-xs text-slate-300 font-medium mb-6">
-              <li class="flex items-center gap-2">
-                <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
-                Economie combustibil: 0.8L – 1.5L / 100km
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
-                Uzură redusă a motorului la drum lung
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
-                Ideal pentru șoferi de cursă lungă și flote
-              </li>
-            </ul>
+        <!-- Serviciu 2 -->
+        <div class="bg-brand-surface border border-brand-border rounded-3xl p-8 hover:border-brand-toxic/50 transition duration-300 group">
+          <div class="w-12 h-12 rounded-2xl bg-brand-toxic/10 border border-brand-toxic/20 flex items-center justify-center text-brand-toxic mb-6 group-hover:scale-110 transition">
+            <i data-lucide="activity" class="w-6 h-6"></i>
           </div>
-          <a href="https://wa.me/40767102251?text=Salut!%20M%C4%83%20intereseaz%C4%83%20o%20resoftare%20ECO%20Tuning%20pentru%20consum." 
-             target="_blank"
-             rel="noopener"
-             class="pt-4 border-t border-brand-border/60 flex items-center justify-between text-xs font-bold text-emerald-400 hover:underline">
-            <span>Cere Ofertă ECO Tuning</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </a>
+          <h3 class="text-xl font-bold text-white mb-3">Diagnoză Dedicată & Log-uri</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Scanare profundă a tuturor modulelor cu echipament profesional și log-uri în sarcină reală pe stradă înainte de orice intervenție software.
+          </p>
+          <ul class="space-y-2 text-xs text-slate-300 font-medium">
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-toxic"></span>
+              Verificare presiune turbină & debitmetru
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-toxic"></span>
+              Test corecții injectoare & încărcare DPF
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-toxic"></span>
+              Raport complet de sănătate al motorului
+            </li>
+          </ul>
         </div>
 
-        <!-- SERVICIU 3: CUTII DE VITEZE TCU -->
-        <div class="bg-brand-surface border border-brand-border rounded-3xl p-6 sm:p-8 hover:border-brand-toxic/50 transition duration-300 flex flex-col justify-between group">
-          <div>
-            <div class="w-12 h-12 rounded-2xl bg-brand-toxic/10 border border-brand-toxic/20 flex items-center justify-center text-brand-toxic mb-5 group-hover:scale-110 transition">
-              <i data-lucide="sliders" class="w-6 h-6"></i>
-            </div>
-            <h3 class="text-lg sm:text-xl font-bold text-white mb-1.5">Optimizare Cutii Automate TCU</h3>
-            <span class="text-xs text-brand-toxic font-semibold block mb-4">DSG, S-Tronic, ZF 8HP & xHP</span>
-            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-5">
-              Resoftare pentru unitatea de control a cutiei. Deblocare limitatoare de cuplu mecanic și timpi de schimbare fulgerători.
-            </p>
-            <ul class="space-y-2 text-xs text-slate-300 font-medium mb-6">
-              <li class="flex items-center gap-2">
-                <i data-lucide="check" class="w-3.5 h-3.5 text-brand-toxic shrink-0"></i>
-                Timp de schimbare redus cu până la 40%
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check" class="w-3.5 h-3.5 text-brand-toxic shrink-0"></i>
-                Presiune hidraulică mărită pe ambreiaje
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check" class="w-3.5 h-3.5 text-brand-toxic shrink-0"></i>
-                Eliminare ezitări la plecarea de pe loc
-              </li>
-            </ul>
+        <!-- Serviciu 3 -->
+        <div class="bg-brand-surface border border-brand-border rounded-3xl p-8 hover:border-brand-toxic/50 transition duration-300 group">
+          <div class="w-12 h-12 rounded-2xl bg-brand-toxic/10 border border-brand-toxic/20 flex items-center justify-center text-brand-toxic mb-6 group-hover:scale-110 transition">
+            <i data-lucide="sliders" class="w-6 h-6"></i>
           </div>
-          <a href="https://wa.me/40767102251?text=Salut!%20Vreau%20o%20ofert%C4%83%20pentru%20resoftare%20cutie%20automat%C4%83." 
-             target="_blank"
-             rel="noopener"
-             class="pt-4 border-t border-brand-border/60 flex items-center justify-between text-xs font-bold text-brand-toxic hover:underline">
-            <span>Cere Ofertă Cutie TCU</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </a>
+          <h3 class="text-xl font-bold text-white mb-3">Cutii de Viteze (TCU) & Soluții</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Remap cutie automată (DSG, S-Tronic, ZF 8HP, xHP), ridicare limitatoare de cuplu mecanic, timpi de schimbare reduși și recalibrări speciale.
+          </p>
+          <ul class="space-y-2 text-xs text-slate-300 font-medium">
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-toxic"></span>
+              Schimbări de treaptă mai rapide și line
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-toxic"></span>
+              Presiune de strângere crescută pe ambreiaje
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-toxic"></span>
+              Pop & Bang / Overrun (la cererea clientului)
+            </li>
+          </ul>
         </div>
 
-      </div>
-
-      <!-- PHOTO BANNER NOU 1: ENGINE BAY TUNING PRECISION -->
-      <div class="mt-10 sm:mt-12 rounded-2xl sm:rounded-3xl overflow-hidden border border-brand-border relative group shadow-2xl">
-        <img src="assets/engine-bay.jpg" 
-             alt="Calibrare mecanică și software compartiment motor BMW M Power" 
-             loading="lazy"
-             class="w-full h-56 sm:h-80 md:h-96 object-cover transform group-hover:scale-105 transition duration-700">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6 sm:p-10">
-          <span class="text-brand-toxic text-xs uppercase font-extrabold tracking-widest mb-1.5">Inginerie & Calibrare Software</span>
-          <h3 class="text-lg sm:text-2xl font-black text-white">Dezvoltat în limitele de toleranță mecanică ale fiecărui propulsor</h3>
-          <p class="text-xs text-slate-300 max-w-xl mt-1 hidden sm:block">Monitorizăm presiunea turbinei, amestecul stoichiometric (AFR) și temperaturile pe evacuare (EGT) pentru siguranță 100%.</p>
-        </div>
-      </div>
-
-      <!-- FEATURE SPECIAL: CODING & FUNCȚII ASCUNSE -->
-      <div class="mt-10 sm:mt-12 bg-brand-card border border-brand-border rounded-2xl sm:rounded-3xl p-6 sm:p-12 relative overflow-hidden">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          
-          <div class="lg:col-span-7">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-toxic/10 text-brand-toxic text-xs font-bold uppercase tracking-widest mb-4">
-              Personalizare Software Dedicată
-            </div>
-            <h3 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
-              Activare Funcții Ascunse & Coding
-            </h3>
-            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
-              Deblocăm opțiunile de fabrică existente pe mașina ta, dar dezactivate din motive de echipare regională. Totul se face non-invaziv prin portul OBD, fără demontarea bordului.
-            </p>
-
-            <!-- Lista de opțiuni de coding -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 text-xs text-slate-300 mb-8">
-              <div class="flex items-center gap-2 bg-brand-surface p-3 rounded-xl border border-brand-border/60">
-                <i data-lucide="gauge" class="w-4 h-4 text-brand-toxic shrink-0"></i>
-                <span><strong>Needle Sweep</strong> (ace peste cap la pornire)</span>
-              </div>
-              <div class="flex items-center gap-2 bg-brand-surface p-3 rounded-xl border border-brand-border/60">
-                <i data-lucide="tv" class="w-4 h-4 text-brand-toxic shrink-0"></i>
-                <span><strong>Animații M Power / RS</strong> pe ceasuri & navi</span>
-              </div>
-              <div class="flex items-center gap-2 bg-brand-surface p-3 rounded-xl border border-brand-border/60">
-                <i data-lucide="power-off" class="w-4 h-4 text-brand-toxic shrink-0"></i>
-                <span><strong>Dezactivare Start-Stop</strong> din memorie</span>
-              </div>
-              <div class="flex items-center gap-2 bg-brand-surface p-3 rounded-xl border border-brand-border/60">
-                <i data-lucide="play-circle" class="w-4 h-4 text-brand-toxic shrink-0"></i>
-                <span><strong>Video in Motion</strong> (video în mers)</span>
-              </div>
-              <div class="flex items-center gap-2 bg-brand-surface p-3 rounded-xl border border-brand-border/60">
-                <i data-lucide="sun" class="w-4 h-4 text-brand-toxic shrink-0"></i>
-                <span><strong>Cornering Lights</strong> & US-Style lights</span>
-              </div>
-              <div class="flex items-center gap-2 bg-brand-surface p-3 rounded-xl border border-brand-border/60">
-                <i data-lucide="key" class="w-4 h-4 text-brand-toxic shrink-0"></i>
-                <span><strong>Pliere oglinzi / geamuri</strong> din cheie</span>
-              </div>
-            </div>
-
-            <a href="https://wa.me/40767102251?text=Salut!%20Vreau%20s%C4%83%20activez%20func%C8%9Bii%20ascunse%20%28coding%29%20pe%20ma%C8%99ina%20mea." 
-               target="_blank"
-               rel="noopener"
-               class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-brand-toxic text-black font-extrabold text-xs uppercase tracking-wider hover:bg-brand-toxicDark transition toxic-glow">
-              <i data-lucide="message-circle" class="w-4 h-4"></i>
-              <span>Cere Lista de Opțiuni pentru Mașina Ta</span>
-            </a>
-          </div>
-
-          <!-- Foto Cockpit cu Coding & Lumini Ambientale -->
-          <div class="lg:col-span-5">
-            <div class="relative rounded-2xl overflow-hidden border border-brand-border shadow-2xl">
-              <img src="assets/coding-cockpit.jpg" 
-                   alt="Interior BMW M cu ceasuri M Power activate și lumini ambientale" 
-                   loading="lazy"
-                   class="w-full h-auto object-cover">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-              <div class="absolute bottom-4 left-4 right-4 text-xs text-white">
-                <span class="text-brand-toxic font-bold block">100% Non-invaziv</span>
-                <span class="text-slate-300 text-[11px]">Compatibil BMW, Audi, VW, Seat, Skoda, Mercedes</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
       </div>
 
     </div>
   </section>
 
-  <!-- ==================== CUM LUCRĂM (PROCESUL ÎN 4 PAȘI + FOTO DYNO) ==================== -->
-  <section id="proces" class="py-16 sm:py-24 bg-brand-surface/40 border-b border-brand-border">
+  <!-- ==================== CUM LUCRĂM (PROCESUL ÎN 4 PAȘI) ==================== -->
+  <section id="proces" class="py-20 md:py-28 bg-brand-surface/40 border-b border-brand-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
-        <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
           Procesul Profesional Galahad
         </h2>
-        <p class="text-slate-400 text-xs sm:text-sm mt-3">
-          Transparență 100%. Iată exact ce se întâmplă când vii la noi pentru calibrare.
+        <p class="text-slate-400 text-sm mt-3">
+          Transparență 100%. Iată exact ce se întâmplă când vii la noi pentru un Stage 1.
         </p>
       </div>
 
-      <!-- PHOTO BANNER NOU 2: DYNO TEST BENCH -->
-      <div class="mb-10 sm:mb-14 rounded-2xl sm:rounded-3xl overflow-hidden border border-brand-border relative group shadow-2xl">
-        <img src="assets/dyno-tuning.jpg" 
-             alt="Testare pe banc dinamometric și monitorizare ECU în timp real" 
-             loading="lazy"
-             class="w-full h-56 sm:h-80 md:h-96 object-cover transform group-hover:scale-105 transition duration-700">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6 sm:p-10">
-          <span class="text-brand-toxic text-xs uppercase font-extrabold tracking-widest mb-1.5">Monitorizare Parametri în Timp Real</span>
-          <h3 class="text-lg sm:text-2xl font-black text-white">Testare și log-uri în sarcină reală pentru fiecare soft</h3>
-          <p class="text-xs text-slate-300 max-w-xl mt-1 hidden sm:block">Ne asigurăm că motorul tău livrează puterea promisă curat, fără detonatii și fără depășirea limitelor turbinei.</p>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         
-        <div class="bg-brand-card border border-brand-border p-5 sm:p-6 rounded-2xl relative">
-          <div class="text-xs font-black font-display text-brand-toxic mb-3">PASUL 01</div>
-          <h4 class="text-base sm:text-lg font-bold text-white mb-2">Diagnoză Prealabilă</h4>
+        <div class="bg-brand-card border border-brand-border p-6 rounded-2xl relative">
+          <div class="text-xs font-black font-display text-brand-toxic mb-4">PASUL 01</div>
+          <h4 class="text-lg font-bold text-white mb-2">Diagnoză Prealabilă</h4>
           <p class="text-xs text-slate-400 leading-relaxed">
-            Verificăm starea mecanică. Dacă identificăm abateri la injectoare sau turbină, te anunțăm înainte să facem vreo modificare.
+            Verificăm dacă mașina este aptă pentru resoftare. Dacă identificăm probleme ascunse la injectoare sau turbină, te anunțăm înainte.
           </p>
         </div>
 
-        <div class="bg-brand-card border border-brand-border p-5 sm:p-6 rounded-2xl relative">
-          <div class="text-xs font-black font-display text-brand-toxic mb-3">PASUL 02</div>
-          <h4 class="text-base sm:text-lg font-bold text-white mb-2">Citire & Backup</h4>
+        <div class="bg-brand-card border border-brand-border p-6 rounded-2xl relative">
+          <div class="text-xs font-black font-display text-brand-toxic mb-4">PASUL 02</div>
+          <h4 class="text-lg font-bold text-white mb-2">Citire & Backup</h4>
           <p class="text-xs text-slate-400 leading-relaxed">
-            Citim fișierul original de fabrică din ECU și îl stocăm în siguranță pe server. Poți reveni la softul stock oricând, gratuit.
+            Citim fișierul original de fabrică din ECU și îl stocăm în siguranță pe serverul nostru. Poți reveni oricând la softul stock.
           </p>
         </div>
 
-        <div class="bg-brand-card border border-brand-border p-5 sm:p-6 rounded-2xl relative">
-          <div class="text-xs font-black font-display text-brand-toxic mb-3">PASUL 03</div>
-          <h4 class="text-base sm:text-lg font-bold text-white mb-2">Calibrare Dedicată</h4>
+        <div class="bg-brand-card border border-brand-border p-6 rounded-2xl relative">
+          <div class="text-xs font-black font-display text-brand-toxic mb-4">PASUL 03</div>
+          <h4 class="text-lg font-bold text-white mb-2">Calibrare Dedicată</h4>
           <p class="text-xs text-slate-400 leading-relaxed">
-            Modificăm hărțile de boost, injecție și cuplu respectând marjele de siguranță mecanică. Scriem noul fișier în calculator.
+            Modificăm hărțile de injecție, boost și cuplu respectând marjele de siguranță mecanică. Scriem noul fișier în calculatorul mașinii.
           </p>
         </div>
 
-        <div class="bg-brand-card border border-brand-border p-5 sm:p-6 rounded-2xl relative">
-          <div class="text-xs font-black font-display text-brand-toxic mb-3">PASUL 04</div>
-          <h4 class="text-base sm:text-lg font-bold text-white mb-2">Test & Log-uri</h4>
+        <div class="bg-brand-card border border-brand-border p-6 rounded-2xl relative">
+          <div class="text-xs font-black font-display text-brand-toxic mb-4">PASUL 04</div>
+          <h4 class="text-lg font-bold text-white mb-2">Test & Log-uri</h4>
           <p class="text-xs text-slate-400 leading-relaxed">
-            Efectuăm proba de drum monitorizând parametrii în sarcină maximă pentru a ne asigura că mașina funcționează impecabil.
+            Efectuăm proba de drum împreună cu tine, monitorizând parametrii în sarcină maximă pentru a ne asigura că mașina merge perfect.
           </p>
         </div>
 
@@ -669,81 +439,81 @@
   </section>
 
   <!-- ==================== PORTOFOLIU / REZULTATE ==================== -->
-  <section id="portofoliu" class="py-16 sm:py-24 border-b border-brand-border">
+  <section id="portofoliu" class="py-20 md:py-28 border-b border-brand-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-14 gap-4">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-4">
         <div>
           <div class="text-xs font-bold uppercase tracking-widest text-brand-toxic mb-2">Exemple Reale de Calibrare</div>
-          <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">Rezultate Tipice de Putere</h2>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Rezultate Tipice Stage 1</h2>
         </div>
-        <p class="text-slate-400 text-xs sm:text-sm max-w-md">
-          Cifre reale, testate pe drum și banc de probă, fără suprasolicitarea componentelor interne.
+        <p class="text-slate-400 text-sm max-w-md">
+          Cifre reale, testate, fără promisiuni nerealiste de cai putere care îți distrug ambreiajul sau turbina.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
-        <!-- Model 1: BMW M340i -->
-        <div class="bg-brand-surface border border-brand-border rounded-2xl p-5 sm:p-6 hover:border-brand-toxic/40 transition">
+        <!-- Proiect 1 -->
+        <div class="bg-brand-surface border border-brand-border rounded-2xl p-6 hover:border-brand-border/80 transition">
           <div class="flex items-center justify-between text-xs text-slate-500 font-bold mb-3">
-            <span>BMW M340i / M140i</span>
-            <span class="text-brand-toxic">3.0 B58 TURBO</span>
+            <span>BMW SERIA 3 (F30)</span>
+            <span class="text-brand-toxic">2.0 DIESEL (N47/B47)</span>
           </div>
           <div class="grid grid-cols-2 gap-4 py-4 border-y border-brand-border/50 text-center">
             <div>
               <span class="text-[10px] uppercase text-slate-500 font-bold block">STOCK</span>
-              <span class="text-lg font-black text-slate-300">374 CP / 500 Nm</span>
+              <span class="text-lg font-black text-slate-300">184 CP / 380 Nm</span>
             </div>
             <div>
               <span class="text-[10px] uppercase text-brand-toxic font-bold block">STAGE 1</span>
-              <span class="text-xl font-black text-brand-toxic">435 CP / 620 Nm</span>
+              <span class="text-xl font-black text-brand-toxic">225 CP / 450 Nm</span>
             </div>
           </div>
           <p class="text-xs text-slate-400 mt-4 leading-relaxed">
-            Răspuns incredibil de accelerație, cuplu masiv disponibil chiar de la 2.000 RPM.
+            Răspuns liniar pe toată plaja de turație, depășiri în siguranță deplină.
           </p>
         </div>
 
-        <!-- Model 2: Audi S5 / RS5 -->
-        <div class="bg-brand-surface border border-brand-border rounded-2xl p-5 sm:p-6 hover:border-brand-toxic/40 transition">
+        <!-- Proiect 2 -->
+        <div class="bg-brand-surface border border-brand-border rounded-2xl p-6 hover:border-brand-border/80 transition">
           <div class="flex items-center justify-between text-xs text-slate-500 font-bold mb-3">
-            <span>AUDI S5 (B9)</span>
-            <span class="text-brand-toxic">3.0 TFSI V6 TURBO</span>
+            <span>AUDI A4 (B9)</span>
+            <span class="text-brand-toxic">2.0 TDI ULTRA</span>
           </div>
           <div class="grid grid-cols-2 gap-4 py-4 border-y border-brand-border/50 text-center">
             <div>
               <span class="text-[10px] uppercase text-slate-500 font-bold block">STOCK</span>
-              <span class="text-lg font-black text-slate-300">354 CP / 500 Nm</span>
+              <span class="text-lg font-black text-slate-300">150 CP / 320 Nm</span>
             </div>
             <div>
               <span class="text-[10px] uppercase text-brand-toxic font-bold block">STAGE 1</span>
-              <span class="text-xl font-black text-brand-toxic">420 CP / 630 Nm</span>
+              <span class="text-xl font-black text-brand-toxic">195 CP / 410 Nm</span>
             </div>
           </div>
           <p class="text-xs text-slate-400 mt-4 leading-relaxed">
-            Eliberare potențial motor V6, sincronizare perfectă cu transmisia Tiptronic 8 trepte.
+            Deblocare de putere software la specificația motorului de 190 CP din fabrică.
           </p>
         </div>
 
-        <!-- Model 3: BMW 320d / 520d -->
-        <div class="bg-brand-surface border border-brand-border rounded-2xl p-5 sm:p-6 hover:border-brand-toxic/40 transition">
+        <!-- Proiect 3 -->
+        <div class="bg-brand-surface border border-brand-border rounded-2xl p-6 hover:border-brand-border/80 transition">
           <div class="flex items-center justify-between text-xs text-slate-500 font-bold mb-3">
-            <span>BMW 320d / 520d (F30/G30)</span>
-            <span class="text-brand-toxic">2.0 DIESEL B47</span>
+            <span>VOLKSWAGEN GOLF 7 GTI</span>
+            <span class="text-brand-toxic">2.0 TSI (EA888.3)</span>
           </div>
           <div class="grid grid-cols-2 gap-4 py-4 border-y border-brand-border/50 text-center">
             <div>
               <span class="text-[10px] uppercase text-slate-500 font-bold block">STOCK</span>
-              <span class="text-lg font-black text-slate-300">190 CP / 400 Nm</span>
+              <span class="text-lg font-black text-slate-300">220 CP / 350 Nm</span>
             </div>
             <div>
               <span class="text-[10px] uppercase text-brand-toxic font-bold block">STAGE 1</span>
-              <span class="text-xl font-black text-brand-toxic">235 CP / 480 Nm</span>
+              <span class="text-xl font-black text-brand-toxic">300 CP / 460 Nm</span>
             </div>
           </div>
           <p class="text-xs text-slate-400 mt-4 leading-relaxed">
-            Cea mai populară motorizare din România: cuplu suplimentar pentru depășiri fără stres.
+            Transformare radicală, accelerație explozivă cu ambreiaje stock protejate.
           </p>
         </div>
 
@@ -753,53 +523,53 @@
   </section>
 
   <!-- ==================== FAQ ==================== -->
-  <section id="faq" class="py-16 sm:py-24 bg-brand-surface/40 border-b border-brand-border">
+  <section id="faq" class="py-20 md:py-28 bg-brand-surface/40 border-b border-brand-border">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="text-center mb-12 sm:mb-14">
-        <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">Întrebări Frecvente</h2>
-        <p class="text-slate-400 text-xs sm:text-sm mt-2">Răspunsuri la cele mai comune întrebări ale clienților noștri.</p>
+      <div class="text-center mb-14">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Întrebări Frecvente</h2>
+        <p class="text-slate-400 text-sm mt-2">Răspunsuri sincere la cele mai comune întrebări despre Stage 1.</p>
       </div>
 
-      <div class="space-y-3.5 sm:space-y-4">
+      <div class="space-y-4">
         
         <details class="bg-brand-card border border-brand-border rounded-2xl p-5 group cursor-pointer">
-          <summary class="font-bold text-white text-xs sm:text-base flex items-center justify-between">
-            <span>Cum aflu prețul exact și cum mă programez?</span>
-            <i data-lucide="chevron-down" class="w-4 h-4 text-brand-toxic group-open:rotate-180 transition"></i>
-          </summary>
-          <p class="text-xs sm:text-sm text-slate-400 mt-3 leading-relaxed">
-            Trimite-ne un mesaj pe WhatsApp la <a href="tel:+40767102251" class="text-brand-toxic font-bold">0767 102 251</a> cu marca, modelul, anul de fabricație și motorizarea (sau seria de șasiu VIN). Îți vom comunica prețul exact și disponibilitatea pentru programare în cel mai scurt timp.
-          </p>
-        </details>
-
-        <details class="bg-brand-card border border-brand-border rounded-2xl p-5 group cursor-pointer">
-          <summary class="font-bold text-white text-xs sm:text-base flex items-center justify-between">
+          <summary class="font-bold text-white text-sm sm:text-base flex items-center justify-between">
             <span>Afectează resoftarea Stage 1 durata de viață a motorului?</span>
             <i data-lucide="chevron-down" class="w-4 h-4 text-brand-toxic group-open:rotate-180 transition"></i>
           </summary>
           <p class="text-xs sm:text-sm text-slate-400 mt-3 leading-relaxed">
-            Nu, atâta timp cât mașina este întreținută corect. Calibrările noastre Stage 1 rămân strict în toleranțele prevăzute de producător pentru turbină, ambreiaje și temperatură gaze.
+            Nu, atâta timp cât mașina este întreținută corespunzător (ulei schimbat la 10.000 km, combustibil de calitate). Calibrările noastre Stage 1 rămân strict în toleranțele termice și mecanice prevăzute de producător pentru turbină și transmisie.
           </p>
         </details>
 
         <details class="bg-brand-card border border-brand-border rounded-2xl p-5 group cursor-pointer">
-          <summary class="font-bold text-white text-xs sm:text-base flex items-center justify-between">
+          <summary class="font-bold text-white text-sm sm:text-base flex items-center justify-between">
             <span>Se pierde softul original de fabrică?</span>
             <i data-lucide="chevron-down" class="w-4 h-4 text-brand-toxic group-open:rotate-180 transition"></i>
           </summary>
           <p class="text-xs sm:text-sm text-slate-400 mt-3 leading-relaxed">
-            Nu. Primul pas este citirea și salvarea softului tău original în baza noastră de date. La vânzarea mașinii sau oricând dorești, revenirea la softul original din fabrică este 100% gratuită.
+            Nu. Primul pas înainte de orice modificare este citirea și salvarea softului tău original în baza noastră de date dedicată. La vânzarea mașinii sau oricând dorești, revenirea la softul original este 100% gratuită.
           </p>
         </details>
 
         <details class="bg-brand-card border border-brand-border rounded-2xl p-5 group cursor-pointer">
-          <summary class="font-bold text-white text-xs sm:text-base flex items-center justify-between">
-            <span>Trec ITP-ul după un Stage 1 sau ECO Tuning?</span>
+          <summary class="font-bold text-white text-sm sm:text-base flex items-center justify-between">
+            <span>Cât timp durează întreaga procedură?</span>
             <i data-lucide="chevron-down" class="w-4 h-4 text-brand-toxic group-open:rotate-180 transition"></i>
           </summary>
           <p class="text-xs sm:text-sm text-slate-400 mt-3 leading-relaxed">
-            Da, fără nicio problemă. Pe Stage 1 și ECO Tuning, filtrele de particule (DPF/OPF) și catalizatoarele rămân 100% active, iar gazele de eșapament se încadrează în normele legale de omologare.
+            În medie între 1.5 și 2.5 ore. Acest interval include diagnoza preliminară, citirea softului, calibrarea parametrilor, scrierea fișierului și proba de drum cu log-uri în timp real.
+          </p>
+        </details>
+
+        <details class="bg-brand-card border border-brand-border rounded-2xl p-5 group cursor-pointer">
+          <summary class="font-bold text-white text-sm sm:text-base flex items-center justify-between">
+            <span>Trec ITP-ul după un Stage 1?</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-brand-toxic group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="text-xs sm:text-sm text-slate-400 mt-3 leading-relaxed">
+            Da, fără nicio problemă. Pe Stage 1 filtrele de particule (DPF/OPF) și catalizatoarele rămân complet active și funcționale, iar emisiile de gaze respectă normele legale de omologare.
           </p>
         </details>
 
@@ -808,47 +578,23 @@
     </div>
   </section>
 
-  <!-- ==================== FOOTER & CONTACT WHATSAPP ==================== -->
+  <!-- ==================== FOOTER & CONTACT ==================== -->
   <footer id="contact" class="py-16 bg-brand-dark text-slate-400 text-sm border-t border-brand-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 sm:gap-10 mb-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
         
         <div class="md:col-span-2">
-          <!-- Logo Oficial Footer -->
-          <a href="#" class="flex items-center gap-3 select-none mb-4 group">
-            <div class="w-10 h-10 shrink-0">
-              <svg viewBox="0 0 100 100" class="w-full h-full" fill="none">
-                <path d="M 50 6 L 86 20 L 78 72 L 50 96 L 22 72 L 14 20 Z" fill="#0D1016" stroke="#94A3B8" stroke-width="3"/>
-                <path d="M 50 14 L 76 26 L 70 66 L 50 86 L 30 66 L 24 26 Z" fill="#131720"/>
-                <path d="M 64 30 L 42 30 L 32 45 L 32 60 L 42 72 L 67 72 L 67 52 L 49 52 L 49 58 L 57 58 L 57 64 L 44 64 L 39 58 L 39 48 L 44 38 L 59 38 L 66 30 Z" fill="#E2E8F0"/>
-                <polygon points="56,30 67,30 67,42" fill="#A3E635"/>
-              </svg>
-            </div>
-            <div>
-              <span class="font-brand font-bold text-xl tracking-[0.2em] titanium-gradient block">GALAHAD</span>
-              <div class="w-20 h-[2px] laser-green-band my-0.5"></div>
-              <span class="font-body font-black text-[9px] tracking-[0.45em] text-brand-toxic uppercase block">PERFORMANCE</span>
-            </div>
+          <a href="#" class="inline-block select-none mb-4">
+            <span class="font-brand font-bold text-2xl tracking-[0.2em] titanium-gradient">GALAHAD</span>
+            <span class="font-body font-black text-xs tracking-[0.45em] text-brand-toxic uppercase block mt-1">PERFORMANCE</span>
           </a>
           <p class="text-xs text-slate-400 max-w-sm leading-relaxed mb-6">
-            Atelier dedicat calibrare software ECU, ECO Tuning, optimizări cutii automate TCU și coding funcții ascunse.
+            Atelier dedicat calibrare software ECU, Stage 1 și diagnoză computerizată pentru pasionați și șoferi care cer performanță sigură.
           </p>
-          
-          <!-- Contact Info Box -->
-          <div class="space-y-2 text-xs">
-            <div class="flex items-center gap-2.5 text-slate-200">
-              <i data-lucide="phone-call" class="w-4 h-4 text-brand-toxic shrink-0"></i>
-              <span>Telefon direct: <a href="tel:+40767102251" class="text-brand-toxic font-bold hover:underline">+40 767 102 251</a></span>
-            </div>
-            <div class="flex items-center gap-2.5 text-slate-200">
-              <i data-lucide="message-circle" class="w-4 h-4 text-brand-toxic shrink-0"></i>
-              <span>WhatsApp: <a href="https://wa.me/40767102251" target="_blank" rel="noopener" class="text-brand-toxic font-bold hover:underline">+40 767 102 251</a></span>
-            </div>
-            <div class="flex items-center gap-2.5 text-slate-200">
-              <i data-lucide="map-pin" class="w-4 h-4 text-brand-toxic shrink-0"></i>
-              <span>Atelier specializat · România</span>
-            </div>
+          <div class="flex items-center gap-3">
+            <span class="w-2.5 h-2.5 rounded-full bg-brand-toxic"></span>
+            <span class="text-xs text-white font-bold">Programări active pentru săptămâna în curs</span>
           </div>
         </div>
 
@@ -856,20 +602,19 @@
           <h4 class="text-xs uppercase font-extrabold text-white tracking-wider mb-4">Servicii</h4>
           <ul class="space-y-2 text-xs">
             <li><a href="#servicii" class="hover:text-brand-toxic transition">Stage 1 ECU Remap</a></li>
-            <li><a href="#servicii" class="hover:text-brand-toxic transition">ECO Tuning (Consum)</a></li>
-            <li><a href="#servicii" class="hover:text-brand-toxic transition">Coding & Funcții Ascunse</a></li>
-            <li><a href="#servicii" class="hover:text-brand-toxic transition">Optimizare Cutii TCU (DSG/ZF)</a></li>
             <li><a href="#servicii" class="hover:text-brand-toxic transition">Diagnoză Computerizată</a></li>
+            <li><a href="#servicii" class="hover:text-brand-toxic transition">Calibrare Cutii TCU (DSG/ZF)</a></li>
+            <li><a href="#servicii" class="hover:text-brand-toxic transition">Soluții Software Speciale</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="text-xs uppercase font-extrabold text-white tracking-wider mb-4">Programează-te Rapid</h4>
-          <p class="text-xs text-slate-300 mb-3">Trimite marca și seria de șasiu pe WhatsApp pentru o cotație exactă:</p>
-          <a href="https://wa.me/40767102251?text=Salut!%20Vreau%20o%20ofert%C4%83%20de%20pre%C8%9B%20pentru%20ma%C8%99ina%20mea." 
+          <h4 class="text-xs uppercase font-extrabold text-white tracking-wider mb-4">Contact Direct</h4>
+          <p class="text-xs text-slate-300 mb-2">Trimite marca, modelul și anul mașinii:</p>
+          <a href="https://wa.me/40767102251?text=Salut!%20Vreau%20o%20ofert%C4%83%20Stage%201%20pentru%20ma%C8%99ina%20mea." 
              target="_blank"
              rel="noopener"
-             class="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-brand-toxic text-black font-extrabold text-xs uppercase tracking-wider hover:bg-brand-toxicDark transition toxic-glow">
+             class="inline-flex items-center gap-2 text-brand-toxic font-bold text-sm hover:underline mt-2">
             <i data-lucide="message-circle" class="w-4 h-4"></i>
             <span>Mesaj pe WhatsApp</span>
           </a>
@@ -880,7 +625,7 @@
       <div class="pt-8 border-t border-brand-border/60 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
         <div>&copy; 2026 GALAHAD PERFORMANCE. Toate drepturile rezervate.</div>
         <div class="flex items-center gap-6">
-          <a href="tel:+40767102251" class="hover:text-brand-toxic">0767 102 251</a>
+          <span>Dezvoltat profesional</span>
           <span>România</span>
         </div>
       </div>
@@ -888,87 +633,38 @@
     </div>
   </footer>
 
-  <!-- ==================== FLOATING WHATSAPP BUTTON (MOBILE & DESKTOP) ==================== -->
-  <div class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end gap-2">
-    <a href="https://wa.me/40767102251?text=Salut%2C%20Galahad%20Performance!%20Vreau%20o%20ofert%C4%83%20de%20pre%C8%9B%20pentru%20ma%C8%99ina%20mea." 
-       target="_blank"
-       rel="noopener"
-       aria-label="Contactează Galahad Performance pe WhatsApp"
-       class="flex items-center gap-2 px-3.5 py-3 sm:px-4 sm:py-3.5 rounded-full bg-brand-toxic text-black font-extrabold text-xs uppercase tracking-wider shadow-2xl hover:scale-105 transition duration-200 toxic-glow group">
-      <i data-lucide="message-circle" class="w-5 h-5 fill-black"></i>
-      <span class="hidden sm:inline">0767 102 251 · WhatsApp</span>
-      <span class="sm:hidden font-black">WhatsApp</span>
-    </a>
-  </div>
-
-  <!-- ==================== JAVASCRIPT: LOGICĂ CALCULATOR COMPLET EXTINS ==================== -->
+  <!-- ==================== JAVASCRIPT: LOGICĂ CALCULATOR ==================== -->
   <script>
-    // Baza de date completă pentru cele mai populare motorizări din România
+    // Baza de date orientativă pentru calculatorul Stage 1
     const database = {
       bmw: [
-        { model: "320d / 520d (2.0d N47/B47 - 184/190CP)", stockHp: 190, stageHp: 235, stockTq: 400, stageTq: 480 },
-        { model: "318d / 518d (2.0d - 143/150CP)", stockHp: 150, stageHp: 190, stockTq: 320, stageTq: 410 },
-        { model: "330d / 530d (3.0d N57/B57 - 258/265CP)", stockHp: 258, stageHp: 315, stockTq: 560, stageTq: 670 },
-        { model: "335d / 535d / M550d (3.0 Bi/TriTurbo - 313/381CP)", stockHp: 313, stageHp: 375, stockTq: 630, stageTq: 730 },
-        { model: "320i / 330i (2.0 B48 Turbo - 184/252CP)", stockHp: 184, stageHp: 260, stockTq: 300, stageTq: 420 },
-        { model: "M340i / M140i (3.0 B58 Turbo - 340/374CP)", stockHp: 374, stageHp: 435, stockTq: 500, stageTq: 620 },
-        { model: "M3 / M4 Competition (3.0 S58 - 510CP)", stockHp: 510, stageHp: 610, stockTq: 650, stageTq: 780 },
-        { model: "X5 / X6 30d (3.0d - 258/265/286CP)", stockHp: 265, stageHp: 320, stockTq: 620, stageTq: 710 }
+        { model: "320d / 520d (2.0d N47/B47)", stockHp: 190, stageHp: 230, stockTq: 400, stageTq: 480 },
+        { model: "330d / 530d (3.0d N57/B57)", stockHp: 258, stageHp: 310, stockTq: 560, stageTq: 660 },
+        { model: "320i / 330i (2.0 B48 Turbo)", stockHp: 184, stageHp: 260, stockTq: 300, stageTq: 420 },
+        { model: "M140i / M340i (3.0 B58 Turbo)", stockHp: 340, stageHp: 420, stockTq: 500, stageTq: 580 }
       ],
       audi: [
-        { model: "A4 / A6 2.0 TDI (Ultra / 150CP)", stockHp: 150, stageHp: 195, stockTq: 320, stageTq: 410 },
-        { model: "A4 / A6 2.0 TDI (CUNA / DETA - 190CP)", stockHp: 190, stageHp: 230, stockTq: 400, stageTq: 470 },
-        { model: "A6 / A7 3.0 TDI V6 (218/245/272CP)", stockHp: 245, stageHp: 305, stockTq: 580, stageTq: 680 },
-        { model: "A6 / A7 3.0 BiTDI V6 (313/320/326CP)", stockHp: 320, stageHp: 380, stockTq: 650, stageTq: 750 },
-        { model: "A4 / A5 2.0 TFSI (EA888 Gen 3 - 190/252CP)", stockHp: 252, stageHp: 305, stockTq: 370, stageTq: 460 },
-        { model: "S4 / S5 (3.0 TFSI V6 Turbo - 354CP)", stockHp: 354, stageHp: 420, stockTq: 500, stageTq: 630 },
-        { model: "RS4 / RS5 (2.9 BiTurbo V6 - 450CP)", stockHp: 450, stageHp: 520, stockTq: 600, stageTq: 720 },
-        { model: "RS6 / RS7 (4.0 TFSI V8 - 600CP)", stockHp: 600, stageHp: 710, stockTq: 800, stageTq: 950 }
+        { model: "2.0 TDI (Ultra / Clean Diesel)", stockHp: 150, stageHp: 195, stockTq: 320, stageTq: 410 },
+        { model: "2.0 TDI (CUNA / DETA)", stockHp: 190, stageHp: 230, stockTq: 400, stageTq: 470 },
+        { model: "3.0 TDI V6 (CRCA / CRT)", stockHp: 245, stageHp: 300, stockTq: 580, stageTq: 670 },
+        { model: "2.0 TFSI (EA888 Gen 3)", stockHp: 190, stageHp: 250, stockTq: 320, stageTq: 400 }
       ],
       volkswagen: [
-        { model: "Golf / Passat 1.6 TDI (105/115CP)", stockHp: 115, stageHp: 145, stockTq: 250, stageTq: 320 },
-        { model: "Golf / Passat / Tiguan 2.0 TDI (150CP)", stockHp: 150, stageHp: 190, stockTq: 340, stageTq: 420 },
-        { model: "Passat / Arteon 2.0 TDI (190/200CP)", stockHp: 190, stageHp: 230, stockTq: 400, stageTq: 470 },
-        { model: "Passat 2.0 BiTDI (CUAA - 240CP)", stockHp: 240, stageHp: 290, stockTq: 500, stageTq: 580 },
-        { model: "Golf 7 GTI 2.0 TSI (220/230/245CP)", stockHp: 230, stageHp: 300, stockTq: 350, stageTq: 460 },
-        { model: "Golf 7R / 8R (2.0 TSI - 300/320CP)", stockHp: 300, stageHp: 370, stockTq: 400, stageTq: 490 },
-        { model: "Touareg 3.0 V6 TDI (245/262/286CP)", stockHp: 262, stageHp: 315, stockTq: 580, stageTq: 680 }
+        { model: "Golf / Passat 2.0 TDI", stockHp: 150, stageHp: 190, stockTq: 340, stageTq: 420 },
+        { model: "Golf 7 GTI 2.0 TSI", stockHp: 220, stageHp: 300, stockTq: 350, stageTq: 460 },
+        { model: "Passat 2.0 BiTDI (CUAA)", stockHp: 240, stageHp: 290, stockTq: 500, stageTq: 580 },
+        { model: "Tiguan / Arteon 2.0 TSI", stockHp: 190, stageHp: 250, stockTq: 320, stageTq: 400 }
       ],
       mercedes: [
-        { model: "C200d / C220d (2.1 CDI OM651 - 170CP)", stockHp: 170, stageHp: 215, stockTq: 400, stageTq: 490 },
-        { model: "C220d / E220d (2.0 OM654 - 194CP)", stockHp: 194, stageHp: 240, stockTq: 400, stageTq: 500 },
-        { model: "C300d (2.0 BiTurbo OM654 - 245CP)", stockHp: 245, stageHp: 290, stockTq: 500, stageTq: 580 },
-        { model: "E350d / S350d (3.0 V6 OM642 - 258CP)", stockHp: 258, stageHp: 310, stockTq: 620, stageTq: 710 },
-        { model: "C200 / E200 (2.0 Turbo Benz - 184/197CP)", stockHp: 184, stageHp: 245, stockTq: 300, stageTq: 380 },
-        { model: "A35 / CLA35 AMG (2.0 Turbo - 306CP)", stockHp: 306, stageHp: 360, stockTq: 400, stageTq: 480 },
-        { model: "A45S AMG (2.0 Turbo M139 - 421CP)", stockHp: 421, stageHp: 475, stockTq: 500, stageTq: 580 }
+        { model: "C220d / E220d (2.0 OM654)", stockHp: 194, stageHp: 240, stockTq: 400, stageTq: 500 },
+        { model: "C200 / E200 (2.0 Turbo Benz)", stockHp: 184, stageHp: 245, stockTq: 300, stageTq: 380 },
+        { model: "C300d (2.0 BiTurbo Diesel)", stockHp: 245, stageHp: 285, stockTq: 500, stageTq: 570 },
+        { model: "A35 AMG (2.0 Turbo)", stockHp: 306, stageHp: 360, stockTq: 400, stageTq: 480 }
       ],
       skoda: [
-        { model: "Octavia / Superb 1.6 TDI (105/115CP)", stockHp: 115, stageHp: 145, stockTq: 250, stageTq: 320 },
-        { model: "Octavia / Superb 2.0 TDI (150CP)", stockHp: 150, stageHp: 195, stockTq: 340, stageTq: 420 },
-        { model: "Octavia vRS 2.0 TDI (184/200CP)", stockHp: 184, stageHp: 225, stockTq: 380, stageTq: 450 },
-        { model: "Octavia vRS 2.0 TSI (245CP)", stockHp: 245, stageHp: 310, stockTq: 370, stageTq: 470 },
-        { model: "Superb 2.0 TSI 4x4 (280CP)", stockHp: 280, stageHp: 350, stockTq: 350, stageTq: 480 },
-        { model: "Kodiaq 2.0 BiTDI RS (240CP)", stockHp: 240, stageHp: 290, stockTq: 500, stageTq: 580 }
-      ],
-      seat: [
-        { model: "Leon 2.0 TDI (150CP)", stockHp: 150, stageHp: 195, stockTq: 340, stageTq: 420 },
-        { model: "Leon FR 2.0 TDI (184CP)", stockHp: 184, stageHp: 225, stockTq: 380, stageTq: 450 },
-        { model: "Cupra Leon / Ateca 2.0 TSI (300CP)", stockHp: 300, stageHp: 370, stockTq: 400, stageTq: 490 },
-        { model: "Cupra Formentor VZ 2.0 TSI (310CP)", stockHp: 310, stageHp: 380, stockTq: 400, stageTq: 500 },
-        { model: "Cupra Formentor 1.5 TSI (150CP)", stockHp: 150, stageHp: 180, stockTq: 250, stageTq: 310 }
-      ],
-      porsche: [
-        { model: "Macan 2.0 Turbo (245/252CP)", stockHp: 252, stageHp: 305, stockTq: 370, stageTq: 460 },
-        { model: "Macan S / GTS (3.0 V6 Turbo - 340/360CP)", stockHp: 354, stageHp: 420, stockTq: 500, stageTq: 620 },
-        { model: "Cayenne 3.0 V6 Diesel (245/262CP)", stockHp: 262, stageHp: 315, stockTq: 580, stageTq: 680 },
-        { model: "Panamera 4S Diesel (4.0 V8 BiTurbo - 422CP)", stockHp: 422, stageHp: 500, stockTq: 850, stageTq: 980 }
-      ],
-      ford: [
-        { model: "Focus / Mondeo 2.0 TDCi (150/180CP)", stockHp: 150, stageHp: 185, stockTq: 370, stageTq: 440 },
-        { model: "Focus / Kuga 2.0 EcoBlue (150/190CP)", stockHp: 190, stageHp: 225, stockTq: 400, stageTq: 470 },
-        { model: "Focus ST 2.3 EcoBoost (280CP)", stockHp: 280, stageHp: 330, stockTq: 420, stageTq: 500 },
-        { model: "Fiesta ST 1.5 EcoBoost (200CP)", stockHp: 200, stageHp: 240, stockTq: 290, stageTq: 360 }
+        { model: "Octavia / Superb 2.0 TDI", stockHp: 150, stageHp: 195, stockTq: 340, stageTq: 420 },
+        { model: "Octavia vRS 2.0 TSI", stockHp: 245, stageHp: 310, stockTq: 370, stageTq: 470 },
+        { model: "Superb 2.0 TSI 4x4", stockHp: 280, stageHp: 350, stockTq: 350, stageTq: 480 }
       ]
     };
 
@@ -1003,26 +699,16 @@
       document.getElementById('stage1Tq').textContent = car.stageTq + ' Nm';
       document.getElementById('tqGainTag').textContent = '+' + tqGain + ' Nm';
 
-      // Link WhatsApp direct cu numărul lui Claudiu
+      // Actualizează butonul WhatsApp cu mașina selectată
       const brandName = document.getElementById('carBrand').options[document.getElementById('carBrand').selectedIndex].text;
-      const msg = encodeURIComponent(`Salut, Galahad Performance! Vreau o ofertă de preț pentru un Stage 1 la ${brandName} - ${car.model} (${car.stockHp}CP -> ${car.stageHp}CP).`);
+      const msg = encodeURIComponent(`Salut, Galahad Performance! Vreau o ofertă de Stage 1 pentru ${brandName} - ${car.model}. Văd o estimare de ${car.stockHp}CP -> ${car.stageHp}CP.`);
       document.getElementById('calcWhatsappBtn').href = `https://wa.me/40767102251?text=${msg}`;
     }
 
-    // Toggle Mobile Menu
-    function toggleMobileMenu() {
-      const menu = document.getElementById('mobileMenu');
-      menu.classList.toggle('hidden');
-    }
-
+    // Inițializare la încărcare
     document.addEventListener('DOMContentLoaded', () => {
       lucide.createIcons();
       updateModels();
-
-      const btn = document.getElementById('mobileMenuBtn');
-      if (btn) {
-        btn.addEventListener('click', toggleMobileMenu);
-      }
     });
   </script>
 </body>
