@@ -99,16 +99,9 @@
         <a href="#faq" class="hover:text-brand-toxic transition">Întrebări</a>
       </nav>
 
-      <!-- CTA WhatsApp Button & Mobile Toggle -->
+      <!-- Mobile Toggle -->
       <div class="flex items-center gap-3">
-        <a href="https://wa.me/40767102251?text=Salut%2C%20Galahad%20Performance!%20Vreau%20o%20ofert%C4%83%20pentru%20ma%C8%99ina%20mea." 
-           target="_blank" 
-           rel="noopener"
-           class="inline-flex items-center gap-2 px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-xl bg-brand-toxic/10 text-brand-toxic border border-brand-toxic/30 font-bold text-xs uppercase tracking-wider hover:bg-brand-toxic hover:text-black transition duration-200">
-          <i data-lucide="message-circle" class="w-4 h-4"></i>
-          <span>Ofertă WhatsApp</span>
-        </a>
-        <button id="mobileMenuBtn" aria-label="Deschide meniul mobil" class="md:hidden p-1.5 text-slate-300 hover:text-white">
+        <button id="mobileMenuBtn" aria-label="Deschide meniul mobil" class="md:hidden p-2 text-slate-300 hover:text-brand-toxic transition">
           <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
       </div>
@@ -164,14 +157,14 @@
       <!-- Action Buttons -->
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
         <a href="#calculator" 
-           class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-toxic text-black font-extrabold text-sm uppercase tracking-wider hover:bg-brand-toxicDark transition duration-200 toxic-glow flex items-center justify-center gap-2">
+           class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-toxic text-black font-extrabold text-sm uppercase tracking-wider hover:bg-brand-toxicDark transition duration-200 toxic-glow flex items-center justify-center gap-2.5">
           <i data-lucide="gauge" class="w-4 h-4"></i>
           <span>Calculează Puterea</span>
         </a>
         <a href="https://wa.me/40767102251?text=Salut!%20Vreau%20o%20ofert%C4%83%20pentru%20un%20Stage%201." 
            target="_blank"
            rel="noopener"
-           class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-card hover:bg-brand-surface text-slate-200 border border-brand-border font-bold text-sm uppercase tracking-wider transition duration-200 flex items-center justify-center gap-2">
+           class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-card hover:bg-brand-surface text-slate-200 border border-brand-border font-extrabold text-sm uppercase tracking-wider transition duration-200 flex items-center justify-center gap-2.5">
           <i data-lucide="phone-call" class="w-4 h-4 text-brand-toxic"></i>
           <span>Consultanță Gratuită</span>
         </a>
@@ -312,9 +305,10 @@
           <a id="calcWhatsappBtn" 
              href="#" 
              target="_blank"
-             class="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-brand-toxic text-black font-extrabold text-sm uppercase tracking-wider hover:bg-brand-toxicDark transition duration-200 toxic-glow">
-            <i data-lucide="message-circle" class="w-5 h-5"></i>
-            <span>Cere Ofertă WhatsApp Pentru Această Configurație</span>
+             rel="noopener"
+             class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-brand-toxic text-black font-extrabold text-sm uppercase tracking-wider hover:bg-brand-toxicDark transition duration-200 toxic-glow">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Cere Ofertă Personalizată</span>
           </a>
         </div>
 
@@ -339,28 +333,34 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
         <!-- Serviciu 1: Stage 1 ECU Remap -->
-        <div class="bg-brand-surface border border-brand-border rounded-3xl p-8 hover:border-brand-toxic/50 transition duration-300 group">
-          <div class="w-12 h-12 rounded-2xl bg-brand-toxic/10 border border-brand-toxic/20 flex items-center justify-center text-brand-toxic mb-6 group-hover:scale-110 transition">
-            <i data-lucide="zap" class="w-6 h-6"></i>
+        <div class="bg-brand-surface border border-brand-border rounded-3xl p-8 hover:border-brand-toxic/50 transition duration-300 group flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-brand-toxic/10 border border-brand-toxic/20 flex items-center justify-center text-brand-toxic mb-6 group-hover:scale-110 transition">
+              <i data-lucide="zap" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Stage 1 ECU Remap</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Creștere optimă de putere și cuplu exclusiv din calibrare software (presiune boost, timpi de injecție, avans), fără a necesita piese mecanice aftermarket.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-300 font-medium mb-6">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-toxic"></span>
+                Păstrează fiabilitatea motorului
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-toxic"></span>
+                Consum redus în regim de croazieră
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-toxic"></span>
+                Garanție software pe viață
+              </li>
+            </ul>
           </div>
-          <h3 class="text-xl font-bold text-white mb-3">Stage 1 ECU Remap</h3>
-          <p class="text-slate-400 text-sm leading-relaxed mb-6">
-            Creștere optimă de putere și cuplu exclusiv din calibrare software (presiune boost, timpi de injecție, avans), fără a necesita piese mecanice aftermarket.
-          </p>
-          <ul class="space-y-2 text-xs text-slate-300 font-medium">
-            <li class="flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-brand-toxic"></span>
-              Păstrează fiabilitatea motorului
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-brand-toxic"></span>
-              Consum redus în regim de croazieră
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-brand-toxic"></span>
-              Garanție software pe viață
-            </li>
-          </ul>
+          <a href="https://wa.me/40767102251?text=Salut!%20Vreau%20o%20ofert%C4%83%20Stage%201%20pentru%20ma%C8%99ina%20mea." target="_blank" rel="noopener" class="text-xs font-bold text-brand-toxic hover:underline inline-flex items-center gap-1.5">
+            <span>Cere Ofertă Stage 1</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
         </div>
 
         <!-- Serviciu 2: Diagnoză Dedicată & Log-uri -->
